@@ -22,13 +22,16 @@ This application has dependencies on the following, make sure each is installed 
 
 
   ### Endpoints
-  Endpoints are defined in `news.service.ts`. 
+  Endpoints are defined in `news.controller.ts`. 
   To test and view the endpoints (Swagger UI), please start the server and then visit `http://localhost:8000/api`
 
   ### Open API Doc
   The YAML file can be found in `file://./swagger/api.yaml`  
   To check Swagger UI, please start the server and visit `http://localhost:8000/api`  
   To generate Swagger API doc, please visit `http://localhost:8000/api-yaml`  
+
+  ### Implemented frontend requirements
+  - Created an endpoint which will contain a list of articles with the required data.  
 
 
 
