@@ -1,0 +1,44 @@
+openapi: 3.0.0
+paths:
+  /ids:
+    get:
+      operationId: NewsController_getArticleIdList
+      parameters: []
+      responses:
+        '200':
+          description: Article IDs fetched successfully
+  /summaries:
+    get:
+      operationId: NewsController_getArticleSummaries
+      parameters: []
+      responses:
+        '200':
+          description: Article summaries fetched successfully
+  /articles:
+    get:
+      operationId: NewsController_getAllArticles
+      parameters: []
+      responses:
+        '200':
+          description: Articles fetched successfully
+  /articles/{id}:
+    get:
+      operationId: NewsController_getArticleDetail
+      parameters:
+        - name: id
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Articles fetched successfully
+info:
+  title: John's News API
+  description: ''
+  version: 0.1.0
+  contact: {}
+tags: []
+servers: []
+components:
+  schemas: {}
